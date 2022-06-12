@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>La Comarca</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="header">
+			<h1>LA COMARCA GYM</h1>
+		</div>
+		<div id="lista">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="instalaciones.html">Instalaciones</a></li>
+				<li><a href="horarios.html">Horarios</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>	
+        <form class="contact-form" target="_blank" action="https://formsubmit.co/alecriscarranza@gmail.com" method="POST">
+            <legend class="text-center header"><br>Somos LA COMARCA GYM</legend>
+            <legend class="text-center header">Por cualquier consulta estamos a su disposicion!</legend>
+                <span><i class="fa fa-user bigicon"></i></span>
+                <input name="name" type="text" placeholder="Nombre y Apellido" class="form-control" title="En este campo solo se aceptan letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                <span><i class="fa fa-envelope-o bigicon"></i></span>
+                <input name="email" type="email" placeholder="Email" class="form-control" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <span><i class="fa fa-pencil-square-o bigicon"></i></span>
+                <input name="subject" type="text" placeholder="Asunto" class="form-control" title="El asunto es requerido" required>
+                <span><i class="fa fa-pencil-square-o bigicon"></i></span>
+                <textarea class="form-control" name="comments" placeholder="Coloca aquí tu consulta y será respondido a la brevedad!" title="Su texto supero los 255 caracteres" data-pattern="^.{1,255}$" rows="7" required></textarea>
+                <input type="submit" class="btn btn-primary btn-lg" value="Enviar" required>
+                <div class="contact-form-loader none">
+                    <img src="oval.svg" alt="Cargando">
+                </div>
+                <div class="contact-form-response none">
+                    <p>Su consulta ha sido enviada!</p>
+                </div>
+        </form>
+		<script src="js1/main.js" type="module"></script>
+		<script src="https://kit.fontawesome.com/afd307b449.js" crossorigin="anonymous"></script>
+	</body>
+</html> 
